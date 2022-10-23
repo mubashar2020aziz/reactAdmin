@@ -1,0 +1,82 @@
+.sidebar {
+  //   background: lightcoral;
+  flex: 1;
+  border: 0.2px solid rgb(202, 209, 211);
+  height: 100vh;
+  background-color: white;
+  .top {
+    height: 50px;
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #6345b4;
+    }
+  }
+  hr {
+    height: 0;
+    border: 0.2px solid rgb(202, 209, 211);
+  }
+  .center {
+    padding-left: 20px;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .title {
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: #999;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 5px;
+
+        &:hover {
+          background: rgb(238, 236, 236);
+        }
+        .icon {
+          font-size: 18px;
+          color: #6345b4;
+        }
+        span {
+          font-size: 13px;
+          font-weight: bold;
+          color: #888;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    .colorOption {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 1px solid #747474;
+      cursor: pointer;
+      margin: 5px;
+
+      &:nth-child(1) {
+        background: whitesmoke;
+      }
+      &:nth-child(2) {
+        background: #333;
+      }
+      //   &:nth-child(1) {
+      //     background: darkblue;
+      //   }
+    }
+  }
+}
