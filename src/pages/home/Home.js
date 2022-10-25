@@ -1,6 +1,10 @@
 import React from 'react';
+import Chart from '../../components/chart/Chart';
+import Feature from '../../components/features/Feature';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
+import Table1 from '../../components/table/Table';
+
 import Widget from '../../components/widget/Widget';
 import './home.scss';
 const Home = () => {
@@ -15,6 +19,15 @@ const Home = () => {
             <Widget type="order" />
             <Widget type="earning" />
             <Widget type="balance" />
+          </div>
+          <div className="charts">
+            <Feature />
+            <Chart />
+          </div>
+
+          <div className="listContainer">
+            <div className="listTitle">Latest Transition </div>
+            <Table1 />
           </div>
         </div>
       </div>
